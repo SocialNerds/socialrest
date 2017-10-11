@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - socialrest
+    - user
+id: product_rest_resource
+plugin_id: product_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - DELETE
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie
+    - basic_auth
